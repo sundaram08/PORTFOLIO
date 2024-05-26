@@ -118,7 +118,7 @@ const Contact = () => {
       setErrorMessage("Please fill all the details properly.");
     } else {
       try {
-        await axios.post("http://localhost:2000/api/v1/post", message);
+        await axios.post("https://portfolio-backend3.vercel.app/api/v1/post", message);
         setMessage({
           name: "",
           email: "",
